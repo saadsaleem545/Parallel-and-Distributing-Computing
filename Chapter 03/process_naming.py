@@ -8,7 +8,7 @@ def myFunc():
     time.sleep(3)
     end_time = time.time()
     print("Exiting process name = %s \n" % name)
-    return end_time - start_time  # 🕒 Process execution time
+    return end_time - start_time  # Process execution time
 
 if __name__ == '__main__':
     process_times = multiprocessing.Manager().list()  # Shared list to store process times
